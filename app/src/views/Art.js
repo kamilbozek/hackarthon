@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import StyledMain from "../components/core/StyledMain";
 import styled from "styled-components";
 import DocumentTitle from "react-document-title";
+import Footer from "../components/core/Footer";
 
 const StyledCta = styled.button`
   color: ${({ theme }) => theme.mainBlack};
@@ -16,7 +17,7 @@ function Art() {
     const [url, setUrl] = useState('')
     const [counter, setCounter] = useState(0)
 
-    const artworkIds = [139, 57, 1];
+    const artworkIds = [139, 57, 1, 41];
 
     useEffect(() => {
         fetch_data();
@@ -84,6 +85,7 @@ function Art() {
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+                <Footer/>
             </StyledMain>
         </DocumentTitle>
     )
