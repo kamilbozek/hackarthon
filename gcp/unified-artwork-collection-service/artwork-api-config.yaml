@@ -1,0 +1,22 @@
+# openapi2-functions.yaml
+swagger: '2.0'
+info:
+  title: artwork-api
+  description: Unified Art Collections API
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /getArtwork:
+    get:
+      summary: Get artwork
+      operationId: getArtwork
+      x-google-backend:
+        address: https://europe-west1-hackarthon-zacheta.cloudfunctions.net/getArtwork
+      responses:
+        '200':
+          description: An URL of an artwork
+          schema:
+            type: string
