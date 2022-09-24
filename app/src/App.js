@@ -4,6 +4,7 @@ import GlobalStyle from "./theme/GlobalStyle";
 import { theme } from "./theme/theme";
 import Art from './views/Art';
 import Home from './views/Home';
+import ReactLogo from './assets/logo.svg';
 
 
 function App() {

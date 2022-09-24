@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
   *, *::before, *::after {
   box-sizing: border-box;
@@ -28,8 +28,8 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
-  color: ${theme.mainBlack};
-  background: ${theme.mainWhite};
+  color: ${theme.secondaryText};
+  background: ${theme.mainBackground};
 }
 
 /*temp styles just to speed up everything*/
