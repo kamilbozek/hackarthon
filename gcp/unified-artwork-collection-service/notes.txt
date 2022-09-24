@@ -1,0 +1,7 @@
+https://cloud.google.com/api-gateway/docs/secure-traffic-gcloud
+https://cloud.google.com/api-gateway/docs/creating-api-config
+
+gcloud services enable apigateway.googleapis.com
+gcloud services enable servicemanagement.googleapis.com
+gcloud services enable servicecontrol.googleapis.com
+
